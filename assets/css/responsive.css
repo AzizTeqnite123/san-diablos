@@ -1,3 +1,11 @@
+@media (min-width : 2000px) {
+    .imgWithCnt.full-width {
+        max-width: 1290px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media (max-width : 1200px) {
     /* GLOBAL CSS */
 
@@ -114,7 +122,7 @@
         font-size: 20px;
     }
 
-    /* .toolTipProd {
+    .toolTipProd {
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -128,18 +136,48 @@
         bottom: -55px;
     }
 
-    .tooltipContent {
-        gap: 40px;
+    .toolTipBox.First .toolTipLines {
+        left: -205px;
     }
 
-    .tooltipContent .toolTipBox:nth-child(4) {
-        margin-top: 0px;
+    .toolTipBox.Second {
+        top: 160px;
+    }
+
+    .toolTipBox.Three {
+        top: 255px;
+        margin-left: 150px;
     }
 
     .toolTipProd::after {
         height: 430px;
         width: 300px;
-    } */
+    }
+
+    .toolTipBox.Three .toolTipLines {
+        left: -205px;
+        top: -45px;
+    }
+
+    .toolTipBox.Fourth {
+        top: 350px;
+        margin-left: 160px;
+    }
+
+    .toolTipLines svg,
+    .toolTipBox.Fourth .toolTipLines svg {
+        width: 240px;
+        height: 120px;
+    }
+
+    .toolTipBox.Fourth .toolTipLines {
+        left: -220px;
+        top: -55px;
+    }
+
+    .toolTipBox.First {
+        top: 70px;
+    }
 
     .categoryMain {
         margin-top: 80px;
@@ -294,6 +332,11 @@
         margin-top: 30px;
     }
 
+    .ribbon {
+        font-size: 15px;
+        padding: 11px 40px;
+    }
+
     .headingH2 {
         font-size: 30px;
         line-height: 30px;
@@ -345,21 +388,6 @@
         margin-bottom: 60px;
     }
 
-    /* .toolTipProd {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .toolTipProdRow {
-        grid-template-columns: repeat(1, 1fr);
-        position: relative;
-    }
-
-    .toolTipProdImg {
-        height: 350px;
-        max-width: 500px;
-    } */
-
     .categoryMainRow {
         gap: 15px;
         grid-template-columns: repeat(2, 1fr);
@@ -378,53 +406,6 @@
     .collection-card-wrapper .card .card__inner {
         height: 350px;
     }
-
-    /* .tooltipContent .toolTipBox:nth-child(1) {
-        margin-top: 0px;
-        margin-left: 0px;
-        position: absolute;
-        top: 15px;
-        left: 0px;
-    }
-
-    .tooltipContent .toolTipBox:nth-child(1) .toolTipLines {
-        position: absolute;
-        right: 0px;
-        top: -30px;
-        left: unset;
-        transform: rotate(-7deg) scaley(-1);
-    }
-
-    .toolTipLines svg {
-        width: 150px;
-        height: 100px;
-    }
-
-    .tooltipContent .toolTipBox:nth-child(2) {
-        margin-left: 0px;
-        margin-top: 0px;
-        position: absolute;
-        left: 40px;
-        transform: translateY(40px);
-        display: none;
-    }
-
-    .tooltipContent .toolTipBox:nth-child(3) {
-        margin-left: 0px;
-        margin-top: 0px;
-        position: absolute;
-        right: 0px;
-        display: none;
-    }
-
-    .tooltipContent .toolTipBox:nth-child(4) {
-        display: none;
-    }
-
-    .toolTipProd::after {
-        height: 340px;
-        width: 230px;
-    } */
 
     .collection-card-wrapper .card .card__content .card__heading {
         font-size: 20px;
@@ -561,7 +542,7 @@
     }
 
     .celebreatedDetailed::after {
-        .siteLinks h3 width: 170px;
+        width: 170px;
         top: 350px;
     }
 
@@ -595,6 +576,19 @@
 
     .bestSellerMain .container .mainBtn {
         margin-top: 0px;
+    }
+
+    .toolTipProdRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .toolTipProdImg {
+        max-width: 500px;
+    }
+
+    .toolTipBox.First {
+        top: -10px;
+        margin-left: 20px;
     }
 
     /* HOME PAGE CSS END */

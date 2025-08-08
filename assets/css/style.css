@@ -919,7 +919,7 @@ body :is(.swiper-button-prev) {
     bottom: -60px;
     left: 50%;
     transform: translateX(-50%);
-
+    z-index: 2;
 }
 
 .imgProdSmll img {
@@ -1073,7 +1073,7 @@ body :is(.swiper-button-prev) {
 }
 
 
-.toolTipProdRow.active  .toolTipProdImg {
+.toolTipProdRow.active .toolTipProdImg {
     transform: scale(1);
     opacity: 1;
 }
@@ -1083,7 +1083,8 @@ body :is(.swiper-button-prev) {
     width: 100%;
     position: relative;
     opacity: 0;
-    transform: scale(.8);     transition: all ease .3s;
+    transform: scale(.8);
+    transition: all ease .3s;
 }
 
 .toolTipProdImg::after {
