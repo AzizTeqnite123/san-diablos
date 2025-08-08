@@ -13,7 +13,6 @@
         }
 
         var swiper = new Swiper(".logoSlider", {
-            slidesPerView: "auto",
             loop: true,
             autoplay: {
                 delay: 0,
@@ -22,15 +21,19 @@
             speed: 8000,
             breakpoints: {
                 150: {
+                    slidesPerView: 0.6,
                     spaceBetween: 20,
                 },
                 576: {
+                    slidesPerView: 1,
                     spaceBetween: 20,
                 },
                 769: {
+                    slidesPerView: 1,
                     spaceBetween: 30,
                 },
                 1025: {
+                    slidesPerView: 1.2,
                     spaceBetween: 40,
                 },
             }
@@ -58,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         spaceBetween: 10
                     },
                     576: {
-                        slidesPerView: 2.5,
+                        slidesPerView: 2.8,
                         spaceBetween: 15
                     },
                     769: {
@@ -66,6 +69,11 @@ document.addEventListener("DOMContentLoaded", function () {
                         spaceBetween: 20,
                     },
                     1025: {
+                        slidesPerView: 4,
+                        spaceBetween: 20
+                    },
+
+                    1200: {
                         slidesPerView: 4,
                         spaceBetween: 30
                     },

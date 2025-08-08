@@ -1,0 +1,891 @@
+@media (max-width : 1200px) {
+    /* GLOBAL CSS */
+
+    .headingH2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    /* GLOBAL CSS */
+
+    /* HOME PAGE CSS START */
+
+    .bestSellerMain {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .categoryMain {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .reviewBox {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .celebreateRow {
+        gap: 20px;
+    }
+
+    .imgWithCntRow {
+        gap: 20px;
+    }
+
+    .categoryMainRow {
+        gap: 20px;
+    }
+
+    .tooltipContent {
+        gap: 60px;
+    }
+
+    /* HOME PAGE CSS END */
+
+}
+
+@media (max-width : 1024px) {
+
+    /* GLOBAL */
+    .headingHldr {
+        margin-bottom: 40px;
+    }
+
+    .headingH2 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .mainBtn {
+        margin-top: 40px;
+    }
+
+    .mainBtn :is(a, button) {
+        font-size: 16px;
+        padding: 10px 26px 10px;
+    }
+
+    .headingHldr p {
+        font-size: 16px;
+        margin-top: 20px;
+        line-height: 21px;
+    }
+
+    .headingH2 em {
+        gap: 5px;
+    }
+
+    .ribbon {
+        font-size: 16px;
+        padding: 13px 40px;
+    }
+
+    /* GLOBAL */
+
+    /* HOME PAGE CSS START */
+
+    .companyLogoSlider {
+        padding: 30px 0 20px;
+    }
+
+    .logoSliderHldr {
+        gap: 30px;
+    }
+
+    .bestSellerMain {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .companyLogoSlider::after {
+        width: 110px;
+    }
+
+    .product-card-wrapper .card .card__inner {
+        height: 300px;
+    }
+
+    .product-card-wrapper .card .card__content .card__heading {
+        font-size: 16px;
+    }
+
+    .product-card-wrapper .card .card__content .price .price__container .price-item {
+        font-size: 20px;
+    }
+
+    /* .toolTipProd {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .toolTipProdImg {
+        height: 400px;
+    }
+
+    .toolTipProdImg::after {
+        height: 200px;
+        bottom: -55px;
+    }
+
+    .tooltipContent {
+        gap: 40px;
+    }
+
+    .tooltipContent .toolTipBox:nth-child(4) {
+        margin-top: 0px;
+    }
+
+    .toolTipProd::after {
+        height: 430px;
+        width: 300px;
+    } */
+
+    .categoryMain {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .collection-card-wrapper .card .card__inner {
+        height: 450px;
+    }
+
+    .collection-card-wrapper .card {
+        gap: 20px;
+    }
+
+    .collection-card-wrapper .card .card__content .card__heading {
+        font-size: 25px;
+    }
+
+    .imgWithCntCnt p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .imgWithCnt.full-width .imgWithCntImg {
+        min-height: 550px;
+    }
+
+    .imgWithCntCnt {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .imgProdSmll {
+        height: 180px;
+        width: 180px;
+    }
+
+    .imgWithCnt::after {
+        height: 190px;
+        width: 80px;
+    }
+
+    .reviewBox {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .revBxTop img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .revBxTop span {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .revBxMn {
+        gap: 30px;
+    }
+
+    .revBxBtmLeft {
+        height: 50px;
+        width: 50px;
+        min-width: 50px;
+    }
+
+    .revBxBtmRgt h3 {
+        font-size: 20px;
+    }
+
+    .revBxBtmRgt p {
+        margin-top: 6px;
+    }
+
+    .RevBxHldr {
+        padding: 60px 20px;
+    }
+
+    .imgWithCntCnt h3 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .celebContent {
+        bottom: -25px;
+    }
+
+    .celebContent .ribbon {
+        font-size: 18px;
+    }
+
+    .celebImg {
+        height: 380px;
+    }
+
+    .celebreatedDetailed::after {
+        width: 200px;
+    }
+
+    .celebreatedDetailed .container::before {
+        width: 220px;
+        height: 220px;
+    }
+
+    .footTopRow {
+        grid-template-columns: 30% 40% 30%;
+    }
+
+    .siteLinks {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+    .footTopRow .siteLinks:nth-of-type(3n + 1) {
+        align-items: flex-start;
+        padding-left: 20px;
+        border: none;
+    }
+
+    .footTopRow .siteLinks:nth-of-type(3n + 2) {
+        align-items: flex-start;
+        padding-left: 60px;
+        padding-right: 20px;
+    }
+
+    .footTopRow .siteLinks:nth-of-type(3n + 3) {
+        align-items: flex-start;
+        padding-left: 60px;
+        padding-right: 20px;
+    }
+
+    .celebreatedDetailed {
+        padding-top: 70px;
+    }
+
+    .bestSellerMain .container .mainBtn {
+        margin-top: 10px;
+    }
+
+    /* HOME PAGE CSS END */
+
+}
+
+@media (max-width : 768px) {
+    /* GLOBAL */
+
+    .mainBtn {
+        margin-top: 30px;
+    }
+
+    .headingH2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .headingHldr {
+        margin-bottom: 30px;
+    }
+
+    body :is(.swiper-button-next, .swiper-button-prev) {
+        height: 35px;
+        width: 35px;
+    }
+
+    body :is(.swiper-button-next, .swiper-button-prev)::after {
+        font-size: 17px;
+    }
+
+    /* GLOBAL */
+
+    /* HOME PAGE CSS START */
+
+    .logoSliderHldr {
+        gap: 20px;
+    }
+
+    .companyLogoSlider {
+        padding: 20px 0 15px;
+    }
+
+    .companyLogoSlider::before {
+        width: 70px;
+    }
+
+    .companyLogoSlider::after {
+        width: 70px;
+    }
+
+    .companySliderLogoRow::after {
+        width: 50px;
+    }
+
+    .companySliderLogoRow::before {
+        width: 50px;
+    }
+
+    .bestSellerMain {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    /* .toolTipProd {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .toolTipProdRow {
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+    }
+
+    .toolTipProdImg {
+        height: 350px;
+        max-width: 500px;
+    } */
+
+    .categoryMainRow {
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .categoryMainRow .collection-card-wrapper:nth-last-child(odd):last-child {
+        max-width: 357px;
+        width: 100%;
+        grid-column: span 2;
+        margin-left: auto;
+        margin-right: auto;
+        justify-self: center;
+    }
+
+    .collection-card-wrapper .card .card__inner {
+        height: 350px;
+    }
+
+    /* .tooltipContent .toolTipBox:nth-child(1) {
+        margin-top: 0px;
+        margin-left: 0px;
+        position: absolute;
+        top: 15px;
+        left: 0px;
+    }
+
+    .tooltipContent .toolTipBox:nth-child(1) .toolTipLines {
+        position: absolute;
+        right: 0px;
+        top: -30px;
+        left: unset;
+        transform: rotate(-7deg) scaley(-1);
+    }
+
+    .toolTipLines svg {
+        width: 150px;
+        height: 100px;
+    }
+
+    .tooltipContent .toolTipBox:nth-child(2) {
+        margin-left: 0px;
+        margin-top: 0px;
+        position: absolute;
+        left: 40px;
+        transform: translateY(40px);
+        display: none;
+    }
+
+    .tooltipContent .toolTipBox:nth-child(3) {
+        margin-left: 0px;
+        margin-top: 0px;
+        position: absolute;
+        right: 0px;
+        display: none;
+    }
+
+    .tooltipContent .toolTipBox:nth-child(4) {
+        display: none;
+    }
+
+    .toolTipProd::after {
+        height: 340px;
+        width: 230px;
+    } */
+
+    .collection-card-wrapper .card .card__content .card__heading {
+        font-size: 20px;
+    }
+
+    .categoryMain {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .imgWithCntRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .imgWithCntImg {
+        order: 1;
+    }
+
+    .imgWithCnt.inverted .imgWithCntImg {
+        order: 1;
+    }
+
+    .imgWithCnt.full-width .imgWithCntImg {
+        min-height: auto;
+        height: 400px;
+    }
+
+    .imgWithCnt.inverted .imgWithCntCnt {
+        margin-left: 0px;
+    }
+
+    .imgWithCntCnt {
+        padding-top: 20px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .imgWithCntCnt {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .imgWithCnt.full-width .imgWithCntCnt {
+        order: 2;
+    }
+
+    .mainBtn :is(a, button) {
+        font-size: 15px;
+        padding: 9px 23px 9px;
+    }
+
+    .product-card-wrapper .card .card__content .card__heading {
+        font-size: 15px;
+    }
+
+    .product-card-wrapper .card .card__content .price .price__container .price-item {
+        font-size: 18px;
+    }
+
+    .imgWithCnt::after {
+        height: 130px;
+        width: 60px;
+    }
+
+    .imgProdSmll {
+        height: 150px;
+        width: 150px;
+    }
+
+    .RevBxHldr {
+        padding: 40px 20px;
+    }
+
+    .imgWithCntCnt p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .revBxTop span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .revBxTop img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+    .revBxMn {
+        gap: 20px;
+    }
+
+    .revBxBtmRgt h3 {
+        font-size: 18px;
+    }
+
+    .reviewBox {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .imgWithCntCnt h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .celebContent .ribbon {
+        font-size: 15px;
+    }
+
+    .celebreatedDetailed {
+        padding-top: 60px;
+    }
+
+    .celebreateRow {
+        gap: 15px;
+        row-gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .celebImg {
+        height: 320px;
+    }
+
+    .celebreateRow .celebBox:nth-last-child(odd):last-child {
+        max-width: 357px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+    .celebreatedDetailed::after {
+        .siteLinks h3 width: 170px;
+        top: 350px;
+    }
+
+    .siteLinks ul li a {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .footTopRow .siteLinks:nth-of-type(3n + 2) {
+        padding-left: 30px;
+        padding-right: 15px;
+    }
+
+    .footTopRow .siteLinks:nth-of-type(3n + 1) {
+        padding-left: 0px;
+    }
+
+    .footTopRow .siteLinks:nth-of-type(3n + 3) {
+        padding-left: 30px;
+        padding-right: 15px;
+    }
+
+    .siteLinks h3 {
+        font-size: 16px;
+    }
+
+    .revBxBtmRgt p {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .bestSellerMain .container .mainBtn {
+        margin-top: 0px;
+    }
+
+    /* HOME PAGE CSS END */
+
+}
+
+@media (max-width : 576px) {
+    /* GLOBAL */
+
+    body :is(.swiper-button-next, .swiper-button-prev)::after {
+        font-size: 15px;
+    }
+
+    body :is(.swiper-button-next, .swiper-button-prev) {
+        height: 30px;
+        width: 30px;
+    }
+
+    .celebContent .ribbon {
+        font-size: 13px;
+        padding: 10px 30px;
+        --r: 15px;
+    }
+
+    .headingH2 em {
+        gap: 2px;
+    }
+
+    body :is(.swiper-button-next) {
+        right: -10px;
+    }
+
+    body :is(.swiper-button-prev) {
+        left: -10px;
+    }
+
+    :is(.container, .page-width) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .headingH2 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .headingHldr {
+        margin-bottom: 25px;
+    }
+
+    .mainBtn {
+        margin-top: 25px;
+    }
+
+    .mainBtn :is(a, button) {
+        font-size: 14px;
+        padding: 8px 20px 8px;
+    }
+
+    /* GLOBAL */
+
+    /* HOME PAGE CSS START */
+
+    .logoSliderHldr li {
+        max-width: 100px;
+    }
+
+    .companyLogoSlider {
+        padding: 15px 0 15px;
+    }
+
+    .bestSellerMain {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .companyLogoSlider::after {
+        width: 50px;
+    }
+
+    .companyLogoSlider::before {
+        width: 50px;
+    }
+
+    .product-card-wrapper .card .card__inner {
+        height: 270px;
+    }
+
+    .product-card-wrapper .card {
+        gap: 15px;
+    }
+
+    .product-card-wrapper .card .card__content .price .price__container .price-item {
+        font-size: 16px;
+    }
+
+    .product-card-wrapper .card .card__content .price {
+        margin-top: 5px;
+    }
+
+    .product-card-wrapper .card .card__content .mainBtn {
+        margin-top: 15px !important;
+    }
+
+    .categoryMain {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .categoryMainRow {
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .categoryMainRow .collection-card-wrapper:nth-last-child(odd):last-child {
+        grid-column: span 1;
+    }
+
+    .collection-card-wrapper .card {
+        gap: 15px;
+    }
+
+    .collection-card-wrapper .card .card__inner {
+        height: 300px;
+    }
+
+    .imgWithCntRow {
+        gap: 15px;
+    }
+
+    .imgWithCnt.inverted .imgWithCntCnt {
+        padding-left: 15px;
+    }
+
+    .imgWithCnt.full-width .imgWithCntImg {
+        height: initial;
+    }
+
+    .imgWithCntCnt p {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 10px;
+    }
+
+    .imgProdSmll {
+        height: 120px;
+        width: 120px;
+        right: 20px;
+        left: unset;
+        transform: unset;
+        bottom: -40px;
+    }
+
+    .imgWithCnt::after {
+        height: 100px;
+        width: 50px;
+    }
+
+    .RevBxHldr {
+        padding: 30px 15px;
+    }
+
+    .revBxTop img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .revBxTop span {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+
+    .revBxBotm {
+        gap: 10px;
+    }
+
+    .revBxBtmLeft {
+        height: 40px;
+        width: 40px;
+        min-width: 40px;
+    }
+
+    .revBxBtmRgt h3 {
+        font-size: 16px;
+    }
+
+    .revBxBtmRgt p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .reviewBox {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .imgWithCntCnt {
+        padding-top: 15px;
+        padding-bottom: 40px;
+        padding-left: 15px;
+    }
+
+    .imgWithCntCnt .headingH2 {
+        margin-bottom: 10px;
+    }
+
+    .imgWithCntCnt h3 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .imgWithCntCnt p {
+        margin-top: 5px;
+    }
+
+    .celebreatedDetailed {
+        padding-top: 40px;
+    }
+
+    .celebreateRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .celebreateRow .celebBox:nth-last-child(odd):last-child {
+        grid-column: unset;
+    }
+
+    .celebImg {
+        height: 280px;
+    }
+
+    .celebreatedDetailed .container::before {
+        width: 150px;
+        height: 150px;
+        top: 40px;
+    }
+
+    .celebreateRow {
+        row-gap: 40px;
+    }
+
+    .footTopRow {
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .siteLinks ul {
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .siteLinks ul li a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .siteLinks {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        border-left: none !important;
+    }
+
+    .siteLinks:not(:first-child) {
+        border-top: 1px solid #FFFFFF33 !important;
+    }
+
+    .prodCardSlider .swiper-wrapper {
+        padding-bottom: 25px;
+    }
+
+    .prodCardSlider .swiper-wrapper {
+        padding-bottom: 30px;
+    }
+
+    .footBottomRow {
+        padding: 8px 0;
+    }
+
+    .product-card-wrapper .card .card__content .card__heading {
+        font-size: 14px;
+    }
+
+    .product-card-wrapper .card .card__content .price .price__container .price-item {
+        font-size: 15px;
+    }
+
+    /* HOME PAGE CSS END */
+
+}

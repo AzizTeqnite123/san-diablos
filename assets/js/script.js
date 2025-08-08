@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         },
         {
-            threshold: 0.3 // Trigger when at least 30% is visible
+            threshold: 0.3
         }
     );
 

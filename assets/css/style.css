@@ -6,6 +6,7 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -202,6 +203,7 @@ body :is(.swiper-button-prev) {
 
 .mainBtn {
     margin-top: 50px;
+    position: relative;
 }
 
 :is(.container, .page-width)>.mainBtn :is(a, button) {
@@ -402,10 +404,10 @@ body :is(.swiper-button-prev) {
     background-image: url(../img/logo-slider-shap-1.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100%;
     position: absolute;
     left: 0px;
     top: 0px;
+    z-index: 1;
 }
 
 .companyLogoSlider::after {
@@ -415,10 +417,10 @@ body :is(.swiper-button-prev) {
     background-image: url(../img/logo-slider-shap-2.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100%;
     position: absolute;
     right: -5px;
     top: 0px;
+    z-index: 1;
 }
 
 .companySliderLogoRow {
@@ -426,6 +428,7 @@ body :is(.swiper-button-prev) {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    z-index: 2;
 }
 
 .companySliderLogoRow::before {
@@ -437,7 +440,7 @@ body :is(.swiper-button-prev) {
     left: -10px;
     transform: translateY(-50%);
     background: linear-gradient(270deg, rgba(255, 255, 255, 0) 4.43%, #CB2B1E 86.71%);
-    z-index: 2;
+    z-index: 3;
 }
 
 .companySliderLogoRow::after {
@@ -449,6 +452,10 @@ body :is(.swiper-button-prev) {
     right: -10px;
     transform: translateY(-50%) rotate(180deg);
     background: linear-gradient(270deg, rgba(255, 255, 255, 0) 4.43%, #CB2B1E 86.71%);
+    z-index: 3;
+}
+
+.companySliderLogoRow .swiper {
     z-index: 2;
 }
 
@@ -460,7 +467,7 @@ body :is(.swiper-button-prev) {
 
 .logoSliderHldr li {
     list-style: none;
-    height: 60px;
+    height: auto;
     max-width: 150px;
 }
 
@@ -687,7 +694,7 @@ body :is(.swiper-button-prev) {
     background-size: auto;
     position: absolute;
     top: -120px;
-    left: calc(78% - 30px);
+    right: 30px;
     transform: rotate(-5deg);
     display: inline-block;
     animation: bounce 3s ease-in-out infinite;
@@ -722,11 +729,19 @@ body :is(.swiper-button-prev) {
 
 .celebBox {
     position: relative;
+    transition: all ease .3s;
+}
+
+.celebBox:hover .celebImg img {
+    transform: scale(1.05);
 }
 
 .celebImg {
     height: 449px;
     width: 100%;
+    transition: all ease .3s;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .celebImg img {
@@ -734,6 +749,12 @@ body :is(.swiper-button-prev) {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition: all ease .3s;
+    overflow: hidden;
+}
+
+.celebBox:hover .celebContent {
+    bottom: 10px;
 }
 
 .celebContent {
@@ -742,6 +763,7 @@ body :is(.swiper-button-prev) {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
+    transition: all ease .3s;
 }
 
 .celebContent .ribbon {
@@ -773,6 +795,8 @@ body :is(.swiper-button-prev) {
 .imgWithCnt.inverted::after {
     left: 0px;
     right: unset;
+    display: inline-block;
+    animation: 3s ease-in-out 0s infinite normal none running bounce;
     z-index: 1;
 }
 
@@ -799,7 +823,8 @@ body :is(.swiper-button-prev) {
 }
 
 .imgWithCnt.full-width .imgWithCntImg {
-    height: 760px;
+    min-height: 760px;
+    height: 100%;
 }
 
 .imgWithCnt.bg-here {
@@ -828,7 +853,8 @@ body :is(.swiper-button-prev) {
 }
 
 .imgWithCntImg {
-    height: 670px;
+    min-height: 670px;
+    height: 100%;
     width: 100%;
 }
 
@@ -844,6 +870,11 @@ body :is(.swiper-button-prev) {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     align-items: center;
+}
+
+.imgWithCntCnt {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .imgWithCntCnt .headingH2 {
@@ -1033,6 +1064,7 @@ body :is(.swiper-button-prev) {
 .toolTipProdRow {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    position: relative;
 }
 
 .toolTipProdRow.active .toolTipBox {
@@ -1040,10 +1072,18 @@ body :is(.swiper-button-prev) {
     transform: translateY(0);
 }
 
+
+.toolTipProdRow.active  .toolTipProdImg {
+    transform: scale(1);
+    opacity: 1;
+}
+
 .toolTipProdImg {
     height: 495px;
     width: 100%;
     position: relative;
+    opacity: 0;
+    transform: scale(.8);     transition: all ease .3s;
 }
 
 .toolTipProdImg::after {
@@ -1057,7 +1097,8 @@ body :is(.swiper-button-prev) {
     bottom: -80px;
     left: calc(0 + 30px);
     z-index: -1;
-    backdrop-filter: blur(4px)
+    backdrop-filter: blur(4px);
+    z-index: -1;
 }
 
 .toolTipProdImg img {
@@ -1076,77 +1117,82 @@ body :is(.swiper-button-prev) {
 }
 
 .toolTipBox {
-    position: relative;
     opacity: 0;
     transform: translateY(-20px);
     transition: all ease .3s;
+}
+
+.toolTipBox.First {
+    position: absolute;
+    top: 90px;
+    margin-left: 75px;
+}
+
+.toolTipBox.First .toolTipLines {
+    position: absolute;
+    left: -240px;
+    top: -40px;
+}
+
+.toolTipBox.Second {
+    position: absolute;
+    top: 209px;
+    margin-left: 55px;
+}
+
+.toolTipBox.Second .toolTipLines {
+    position: absolute;
+    left: -170px;
+    top: -45px;
+}
+
+.toolTipBox.Second .toolTipLines svg {
+    width: 170px;
+    height: 140px;
+}
+
+.toolTipBox.Three {
+    position: absolute;
+    top: 330px;
+    margin-left: 190px;
+}
+
+.toolTipBox.Three .toolTipLines {
+    position: absolute;
+    left: -245px;
+    top: -55px;
+}
+
+.toolTipBox.Fourth {
+    position: absolute;
+    top: 450px;
+    margin-left: 210px;
+}
+
+.toolTipBox.Fourth .toolTipLines {
+    position: absolute;
+    left: -275px;
+    top: -75px;
+    transform: rotate(10deg);
+}
+
+.toolTipBox.Fourth .toolTipLines svg {
+    width: 312px;
+    height: 153px;
 }
 
 .toolTipBox .ribbon {
     font-family: Brothers;
 }
 
-.tooltipContent .toolTipBox:nth-child(1) {
-    margin-top: 60px;
-    margin-left: 60px;
-}
-
-.tooltipContent .toolTipBox:nth-child(1) .toolTipLines {
-    position: absolute;
-    left: -190px;
-    top: -30px;
-    transform: rotate(-7deg);
-}
-
-.tooltipContent .toolTipBox:nth-child(2) {
-    margin-left: 30px;
-    margin-top: 20px;
-}
-
-.tooltipContent .toolTipBox:nth-child(2) .toolTipLines {
-    position: absolute;
-    left: -150px;
-    top: -50px;
-}
-
-.tooltipContent .toolTipBox:nth-child(2) .toolTipLines svg {
-    width: 152px;
-}
-
-.tooltipContent .toolTipBox:nth-child(3) {
-    margin-left: 165px;
-    margin-top: 0px;
-}
-
-.tooltipContent .toolTipBox:nth-child(3) .toolTipLines {
-    position: absolute;
-    left: -190px;
-    top: -55px;
-    transform: rotate(4deg);
-}
-
-.tooltipContent .toolTipBox:nth-child(4) {
-    margin-left: 180px;
-    margin-top: -20px;
-}
-
-.tooltipContent .toolTipBox:nth-child(4) .toolTipLines {
-    position: absolute;
-    left: -205px;
-    top: -54px;
-    transform: rotate(10deg);
-}
-
 .toolTipLines svg {
-    width: 190px;
+    width: 270px;
     height: 140px;
 }
 
 .toolTipLines svg path {
-    /* stroke: #F8F8F899; */
     stroke-width: 1;
     stroke-dasharray: 1000;
-    /* fill: none; */
     stroke-dashoffset: 1000;
     animation: draw 20s ease forwards;
 }
@@ -1172,22 +1218,25 @@ body :is(.swiper-button-prev) {
 
 .footTopRow {
     display: grid;
-    grid-template-columns: 20% 25% 20% 20% 15%;
+    grid-template-columns: 23% 27% 19% 19% 12%;
     gap: 0px;
 }
 
 .footTopRow .siteLinks:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-left: 1px solid #FFFFFF33;
-    padding-left: 66px;
 }
 
 .footTopRow .siteLinks:last-child {
-    margin-right: 0px;
+    align-items: end;
 }
 
 .siteLinks {
     padding-top: 40px;
     padding-bottom: 40px;
+    width: 100%;
 }
 
 .siteLinks h3 {
