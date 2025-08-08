@@ -1035,6 +1035,11 @@ body :is(.swiper-button-prev) {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.toolTipProdRow.active .toolTipBox {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .toolTipProdImg {
     height: 495px;
     width: 100%;
@@ -1072,6 +1077,9 @@ body :is(.swiper-button-prev) {
 
 .toolTipBox {
     position: relative;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all ease .3s;
 }
 
 .toolTipBox .ribbon {
@@ -1085,30 +1093,36 @@ body :is(.swiper-button-prev) {
 
 .tooltipContent .toolTipBox:nth-child(1) .toolTipLines {
     position: absolute;
-    left: -210px;
-    top: -40px;
+    left: -190px;
+    top: -30px;
+    transform: rotate(-7deg);
 }
 
 .tooltipContent .toolTipBox:nth-child(2) {
-    margin-left: 60px;
+    margin-left: 30px;
     margin-top: 20px;
 }
 
 .tooltipContent .toolTipBox:nth-child(2) .toolTipLines {
     position: absolute;
-    left: -200px;
-    top: -40px;
+    left: -150px;
+    top: -50px;
+}
+
+.tooltipContent .toolTipBox:nth-child(2) .toolTipLines svg {
+    width: 152px;
 }
 
 .tooltipContent .toolTipBox:nth-child(3) {
-    margin-left: 180px;
+    margin-left: 165px;
     margin-top: 0px;
 }
 
 .tooltipContent .toolTipBox:nth-child(3) .toolTipLines {
     position: absolute;
-    left: -200px;
-    top: -45px;
+    left: -190px;
+    top: -55px;
+    transform: rotate(4deg);
 }
 
 .tooltipContent .toolTipBox:nth-child(4) {
@@ -1118,22 +1132,23 @@ body :is(.swiper-button-prev) {
 
 .tooltipContent .toolTipBox:nth-child(4) .toolTipLines {
     position: absolute;
-    left: -200px;
-    top: -45px;
+    left: -205px;
+    top: -54px;
+    transform: rotate(10deg);
 }
 
 .toolTipLines svg {
     width: 190px;
-    height: 130px;
+    height: 140px;
 }
 
 .toolTipLines svg path {
-    stroke: #F8F8F899;
+    /* stroke: #F8F8F899; */
     stroke-width: 1;
     stroke-dasharray: 1000;
     /* fill: none; */
     stroke-dashoffset: 1000;
-    animation: draw 15s ease forwards;
+    animation: draw 20s ease forwards;
 }
 
 @keyframes draw {
