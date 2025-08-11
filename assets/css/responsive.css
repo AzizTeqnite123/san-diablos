@@ -219,7 +219,7 @@
         font-size: 25px;
     }
 
-    .imgWithCntCnt p {
+    .imgWithCntCnt :is(p, ol li, ul li) {
         font-size: 16px;
         line-height: 22px;
         margin-bottom: 20px;
@@ -542,7 +542,7 @@
         padding: 40px 20px;
     }
 
-    .imgWithCntCnt p {
+    .imgWithCntCnt :is(p, ol li, ul li) {
         font-size: 15px;
         line-height: 20px;
     }
@@ -868,7 +868,7 @@
         height: initial;
     }
 
-    .imgWithCntCnt p {
+    .imgWithCntCnt :is(p, ol li, ul li) {
         font-size: 14px;
         line-height: 19px;
         margin-bottom: 10px;
@@ -943,7 +943,7 @@
         line-height: 18px;
     }
 
-    .imgWithCntCnt p {
+    .imgWithCntCnt :is(p, ol li, ul li) {
         margin-top: 5px;
     }
 
