@@ -1,7 +1,7 @@
 AOS.init();
 
 document.addEventListener("DOMContentLoaded", function () {
-    const element = document.querySelector(".toolTipProdRow");
+    const element = document.querySelector(".toolTipProd");
 
     if (!element) return;
 

@@ -35,7 +35,12 @@ html {
     font-family: Brothers;
 }
 
-p {
+header img {
+    width: 100%;
+}
+
+p,
+li {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -121,7 +126,6 @@ p {
     text-align: center;
     text-transform: uppercase;
     color: #242424;
-    margin-top: 20px;
 }
 
 .headingH1 em {
@@ -156,7 +160,7 @@ p {
     background-size: contain;
     background-position: right center;
     width: 100%;
-    height: 5px;
+    height: 6px;
 }
 
 .headingHldr {
@@ -212,7 +216,7 @@ body :is(.swiper-button-prev) {
 }
 
 .mainBtn :is(a, button) {
-    padding: 11.7px 30px 11.7px;
+    padding: 11.7px 29px 11.7px;
     font-family: Brandon Printed;
     font-weight: 500;
     font-size: 18px;
@@ -239,14 +243,20 @@ body :is(.swiper-button-prev) {
 
 .mainBtn :is(a, button).blackBtn {
     background: #141414;
-    border: 1px solid #141414;
+    border: 1px solid #806C3D;
     color: #fff;
 }
 
 .mainBtn :is(a, button).redBtn {
     color: #fff;
     background: #CB2B1E;
-    border: 1px solid #CB2B1E;
+    border: 1px solid #806C3D;
+}
+
+.mainBtn :is(a, button).whiteBtn {
+    color: #141414;
+    border: 1px solid #806C3D;
+    background: #FFFFFF;
 }
 
 .mainBtn :is(a, button).redBtn:hover {
@@ -259,12 +269,22 @@ body :is(.swiper-button-prev) {
     transform: translateY(-5px);
 }
 
+.mainBtn :is(a, button).whiteBtn:hover {
+    box-shadow:
+        rgba(0, 0, 0, 0.4) 0px 5px,
+        rgba(0, 0, 0, 0.3) 0px 10px,
+        rgba(0, 0, 0, 0.2) 0px 15px,
+        rgba(0, 0, 0, 0.1) 0px 20px,
+        rgba(0, 0, 0, 0.05) 0px 25px;
+    transform: translateY(-5px);
+}
+
 /* GLOBAL CSS END */
 
 
 /* MAIN BANNER CSS STYLE START */
 
-.mainBanner {
+/* .mainBanner {
     padding-top: 40px;
     position: relative;
     background-repeat: no-repeat;
@@ -381,17 +401,109 @@ body :is(.swiper-button-prev) {
     height: 100%;
     object-fit: contain;
     object-position: bottom;
+} */
+
+.mainBanner {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.mainBanner::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #d9d9d90c;
+    z-index: 1;
+}
+
+.mainBanner .container {
+    padding-right: 0px;
+}
+
+.mainBanRow {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    align-items: end;
+    gap: 10px;
+}
+
+.bannerContent {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.bannerContent .headingH1 {
+    text-align: left;
+}
+
+.bannerContent .desc p {
+    font-family: Brandon Printed;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #141414;
+    margin-top: 20px;
+}
+
+.bannerImg {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.bannerImg::after {
+    content: '';
+    height: 95%;
+    width: 90%;
+    background-image: url(../img/banner-image-shape.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    display: inline-block;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+.bannerImg img {
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.bannerContent .mainBtn :is(a, button):hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px,
+        rgba(0, 0, 0, 0.3) 0px 10px,
+        rgba(0, 0, 0, 0.2) 0px 15px,
+        rgba(0, 0, 0, 0.1) 0px 20px,
+        rgba(0, 0, 0, 0.05) 0px 25px;
 }
 
 /* MAIN BANNER CSS STYLE END*/
 
 /* LOGO SLIDER CSS START */
 
+.template-product .companyLogoSlider {
+    margin-top: 0px !important;
+}
+
 .companyLogoSlider {
-    position: relative;
     background: #CB2B1E;
-    padding: 40px 0 30px;
-    /* margin-top: -45px; */
+    padding: 35px 0 35px;
+    margin-top: -30px;
     position: relative;
     z-index: 2;
     overflow: hidden;
@@ -778,6 +890,8 @@ body :is(.swiper-button-prev) {
 
 .imgWithCnt {
     position: relative;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 .imgWithCnt::after {
@@ -842,6 +956,11 @@ body :is(.swiper-button-prev) {
     color: #fff;
 }
 
+.imgWithCnt.bg-here,
+.imgWithCnt.full-width {
+    margin: 0px !important;
+}
+
 .imgWithCnt.inverted .imgWithCntImg {
     order: 2;
 }
@@ -862,7 +981,6 @@ body :is(.swiper-button-prev) {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: top;
 }
 
 .imgWithCntRow {
@@ -882,7 +1000,7 @@ body :is(.swiper-button-prev) {
     text-align: left;
 }
 
-.imgWithCntCnt p {
+.imgWithCntCnt :is(p, ol li, ul li) {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: Medium;
@@ -892,6 +1010,12 @@ body :is(.swiper-button-prev) {
     color: #141414;
     margin-bottom: 30px;
     margin-top: 10px;
+}
+
+.imgWithCntCnt :is(ol, ul) {
+    margin-top: 40px;
+    list-style-position: inside;
+    padding-left: 20px;
 }
 
 .imgWithCntCnt p:last-child {
@@ -1067,13 +1191,12 @@ body :is(.swiper-button-prev) {
     position: relative;
 }
 
-.toolTipProdRow.active .toolTipBox {
+.toolTipProd.active .toolTipBox {
     opacity: 1;
     transform: translateY(0);
 }
 
-
-.toolTipProdRow.active .toolTipProdImg {
+.toolTipProd.active .toolTipProdImg {
     transform: scale(1);
     opacity: 1;
 }
@@ -1305,3 +1428,294 @@ body :is(.swiper-button-prev) {
 }
 
 /* FOOTER CSS END  */
+
+/* PRODUCT DETAIL CSS START */
+
+.prodDetail {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    background: #F8F8F8;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.prodDetRow {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+}
+
+.prodDetCnt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.prodDetBx h3 {
+    font-family: Brandon Printed;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #CB2B1E;
+    max-width: 300px;
+}
+
+.prodDetBx p {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #141414;
+    max-width: 300px;
+}
+
+.prodDetIMG {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.prodDetIMG::before {
+    content: '';
+    height: 105%;
+    width: 105%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/black-circle-back-layer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -2;
+}
+
+.prodDetIMG::after {
+    content: '';
+    height: 105%;
+    width: 105%;
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    background-image: url(../img/circle-layer-red.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    display: inline-block;
+    animation: spin 30s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.prodDetIMG img {
+    width: 260px;
+    object-fit: contain;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* PRODUCT DETAIL CSS END */
+
+/* CHOOSE SIDE CSS START */
+
+.chooseSide {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.choosrSideRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.sideBox {
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sideBox::before {
+    content: '';
+    width: 155px;
+    height: 176px;
+    background-image: url(../img/side-top-layer.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -50px;
+    right: -20px;
+    display: inline-block;
+    animation: 3s ease-in-out 0s infinite normal none running bounce;
+}
+
+.sideBox::after {
+    content: '';
+    width: 240px;
+    height: 187px;
+    background-image: url(../img/side-btm-layer.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -80px;
+    right: 10px;
+    display: inline-block;
+    animation: 3s ease-in-out 0s infinite normal none running bounce;
+}
+
+.sideBox * {
+    color: #fff;
+}
+
+.sideBox:nth-of-type(2n + 1) {
+    background: #141414;
+}
+
+.sideBox:nth-of-type(2n + 2) {
+    background: #CB2B1E;
+}
+
+.sideBoxTop {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.ChossSideTpLeft {
+    width: 133px;
+    height: 214px;
+}
+
+.ChossSideTpLeft img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.ChossSideTpRight h4 {
+    font-family: Brothers;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.ChossSideTpRight h3 {
+    font-family: Brothers;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.sideBoxBotm {
+    margin-top: 30px;
+    max-width: 490px;
+}
+
+.sideBoxBotm ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 25px;
+}
+
+.sideBoxBotm :is(p, li) {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.sideBoxBotm :is(p, li) strong {
+    font-weight: 600;
+}
+
+.sideBoxBotm p {
+    margin-top: 40px;
+}
+
+/* CHOOSE SIDE CSS END */
+
+/* VIDEO REVIEW CSS START  */
+
+.videoReview {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.videoReview .headingHldr .headingH2 {
+    color: #fff;
+}
+
+.videoReview .headingHldr .headingH2 em::after {
+    filter: invert(1);
+}
+
+.videRevBx {
+    position: relative;
+}
+
+.videRevHldr {
+    height: 580px;
+}
+
+.videRevHldr video {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.videoRevBtmHldr {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ffffff;
+    align-items: center;
+    gap: 20px;
+}
+
+.vidRevBtmImg {
+    min-width: 93px;
+    width: 93px;
+    height: 83px;
+}
+
+.vidRevBtmImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.videRevCnt h3 {
+    font-family: Brothers;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+letter-spacing: 0px;
+text-transform: uppercase;
+}
+
+/* VIDEO REVIEW CSS END  */

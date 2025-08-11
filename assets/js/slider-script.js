@@ -83,3 +83,34 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     MultipleSlider();
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const MultipleSlider = () => {
+//         const MultipleSliders = document.querySelectorAll(".videoSliderReviews");
+//         MultipleSliders.forEach((slider, index) => {
+//             new Swiper(slider.querySelector(".videoSliderReviews"), {
+//                 slidesPerView: 3,
+//                 effect: 'slide',
+//                 spaceBetween: 30,
+//                 centeredSlides: true,
+//                 pagination: {
+//                     el: slider.querySelector(".swiper-pagination"),
+//                     clickable: true,
+//                 },
+//             });
+//         });
+//     };
+
+//     MultipleSlider();
+// });
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".videoSliderReviews", {
+        slidesPerView: 3, effect: 'slide',
+        spaceBetween: 30, loop: true,
+        centeredSlides: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+});
