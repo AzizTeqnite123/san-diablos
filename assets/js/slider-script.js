@@ -84,33 +84,42 @@ document.addEventListener("DOMContentLoaded", function () {
     MultipleSlider();
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const MultipleSlider = () => {
-//         const MultipleSliders = document.querySelectorAll(".videoSliderReviews");
-//         MultipleSliders.forEach((slider, index) => {
-//             new Swiper(slider.querySelector(".videoSliderReviews"), {
-//                 slidesPerView: 3,
-//                 effect: 'slide',
-//                 spaceBetween: 30,
-//                 centeredSlides: true,
-//                 pagination: {
-//                     el: slider.querySelector(".swiper-pagination"),
-//                     clickable: true,
-//                 },
-//             });
-//         });
-//     };
-
-//     MultipleSlider();
-// });
 document.addEventListener("DOMContentLoaded", function () {
-    var swiper = new Swiper(".videoSliderReviews", {
-        slidesPerView: 3, effect: 'slide',
-        spaceBetween: 30, loop: true,
-        centeredSlides: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
+    document.querySelectorAll(".videoSliderReviews").forEach((slider, index) => {
+        const wrapper = slider.querySelector(".swiper-wrapper");
+        const slides = slider.querySelectorAll(".swiper-slide");
+
+        // clone multiplier (default = 2 instead of 5)
+        const clones = parseInt(slider.dataset.cloneMultiplier, 1) || 1;
+
+        for (let i = 0; i < clones; i++) {
+            slides.forEach((s) => wrapper.appendChild(s.cloneNode(true)));
+        }
+
+        console.log(
+            `Slider #${index + 1}: total slides ${wrapper.querySelectorAll(".swiper-slide").length}`
+        );
+
+        new Swiper(slider, {
+            direction: "horizontal",
+            loop: true,
+            effect: 'slide',
+            speed: 1000,
+            centeredSlides: true,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                150: { slidesPerView: 1.2, spaceBetween: 10 },
+                576: { slidesPerView: 2, spaceBetween: 15 },
+                769: { slidesPerView: 2.7, spaceBetween: 20 },
+                1025: { slidesPerView: 3, spaceBetween: 20 },
+                1200 : {slidesPerView: 3, spaceBetween: 30},
+            },
+        });
     });
 });
+
+

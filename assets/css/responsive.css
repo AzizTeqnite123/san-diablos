@@ -49,6 +49,49 @@
         gap: 60px;
     }
 
+    .imgWithCnt {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .prodDetBx {
+        max-width: 260px;
+    }
+
+    .prodDetail {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .chooseSide {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .sideBoxTop {
+        gap: 30px;
+    }
+
+    .choosrSideRow {
+        gap: 20px;
+    }
+
+    .videoReview {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .faqMain {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .faqAccrd {
+        gap: 20px;
+    }
+
     /* HOME PAGE CSS END */
 
 }
@@ -229,7 +272,7 @@
         min-height: 550px;
     }
 
-    .imgWithCntCnt {
+    .imgWithCnt.full-width .imgWithCntCnt {
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -344,6 +387,180 @@
         margin-top: 10px;
     }
 
+    .imgWithCnt {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .imgWithCntImg {
+        min-height: 500px;
+    }
+
+    .prodDetail {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .prodDetIMG::before {
+        height: 90%;
+        width: 90%;
+    }
+
+    .prodDetIMG::after {
+        height: 90%;
+        width: 90%;
+    }
+
+    .prodDetCnt {
+        gap: 60px;
+    }
+
+    .prodDetIMG img {
+        width: 200px;
+    }
+
+    .prodDetBx p {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .prodDetBx h3 {
+        font-size: 20px;
+    }
+
+    .imgWithCntCnt :is(ol, ul) {
+        margin-top: 30px;
+    }
+
+    .prodDetBx {
+        max-width: 220px;
+    }
+
+    .chooseSide {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .sideBox {
+        padding: 20px;
+    }
+
+    .sideBoxTop {
+        gap: 20px;
+    }
+
+    .ChossSideTpLeft {
+        width: 100px;
+        height: 150px;
+    }
+
+    .ChossSideTpRight h4 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .ChossSideTpRight h3 {
+        font-size: 35px;
+        line-height: 35px;
+        margin-top: 10px;
+    }
+
+    .sideBoxBotm :is(p, li) {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .sideBoxBotm ul {
+        gap: 15px;
+    }
+
+    .sideBoxBotm p {
+        margin-top: 25px;
+    }
+
+    .sideBox::before {
+        width: 130px;
+        height: 150px;
+        top: -25px;
+    }
+
+    .sideBox::after {
+        width: 150px;
+        height: 120px;
+        bottom: -50px;
+    }
+
+    .videoReview {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .videRevHldr {
+        height: 480px;
+    }
+
+    .videoSliderReviews .swiper-wrapper .swiper-slide-active .videRevHldr {
+        height: 520px;
+    }
+
+    .videoSliderReviews .swiper-wrapper {
+        min-height: 520px;
+    }
+
+    .videoRevBtmHldrPrnt {
+        padding: 15px;
+    }
+
+    .videoRevBtmHldr {
+        gap: 15px;
+    }
+
+    .videRevCnt span {
+        font-size: 16px;
+    }
+
+    .videRevCnt h3 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .vidRevBtmImg {
+        min-width: 80px;
+        width: 80px;
+        height: 70px;
+    }
+
+    .videoPlayBtnHldr .playBtn {
+        height: 50px;
+        width: 50px;
+    }
+
+    .revBxProd {
+        position: absolute;
+        height: 140px;
+        width: 140px;
+        left: -20px;
+        bottom: -120px;
+    }
+
+    .faqMain {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .faqCnt p {
+        font-size: 16px;
+        line-height: 21px;
+        max-width: 460px;
+    }
+
+    .faqProd {
+        height: 150px;
+        width: 150px;
+    }
+
     /* HOME PAGE CSS END */
 
 }
@@ -367,6 +584,7 @@
     .headingH2 {
         font-size: 30px;
         line-height: 30px;
+        letter-spacing: -2.2px;
     }
 
     .headingHldr {
@@ -499,16 +717,36 @@
         margin-left: 0px;
     }
 
-    .imgWithCntCnt {
-        padding-top: 20px;
-        padding-bottom: 50px;
+    .imgWithCnt.full-width .imgWithCntCnt {
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 40px;
     }
 
     .imgWithCntCnt {
-        padding-top: 20px;
-        padding-bottom: 40px;
+        order: 2;
+    }
+
+    .imgWithCntCnt :is(ol, ul) {
+        margin-top: 20px;
+    }
+
+    .imgWithCnt {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .prodDetail {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .imgWithCntImg {
+        min-height: auto;
+        height: 400px;
     }
 
     .imgWithCnt.full-width .imgWithCntCnt {
@@ -545,6 +783,7 @@
     .imgWithCntCnt :is(p, ol li, ul li) {
         font-size: 15px;
         line-height: 20px;
+        margin-bottom: 15px;
     }
 
     .revBxTop span {
@@ -701,6 +940,145 @@
         left: -158px;
         top: -63px;
         transform: rotate(30deg);
+    }
+
+    .prodDetRow {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .prodDetCnt {
+        gap: 15px;
+        flex-direction: row;
+    }
+
+    .prodDetBx h3 {
+        font-size: 18px;
+    }
+
+    .prodDetBx p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .prodDetIMG {
+        height: 400px;
+    }
+
+    .chooseSide {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .choosrSideRow {
+        gap: 15px;
+        grid-template-columns: 1fr;
+    }
+
+    .ChossSideTpRight h4 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .ChossSideTpRight h3 {
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    .ChossSideTpLeft {
+        width: 80px;
+        height: 120px;
+    }
+
+    .sideBoxBotm :is(p, li) {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .videoReview {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .videoSliderReviews .swiper-wrapper .swiper-slide-active .videRevHldr {
+        height: 440px;
+    }
+
+    .videRevHldr {
+        height: 400px;
+    }
+
+    .vidRevBtmImg {
+        min-width: 70px;
+        width: 70px;
+        height: 62px;
+    }
+
+    .videRevCnt h3 {
+        font-size: 17px;
+        line-height: 17px;
+    }
+
+    .videRevCnt span {
+        font-size: 15px;
+        margin-top: 7px;
+    }
+
+    .videoSliderReviews .swiper-wrapper {
+        min-height: 440px;
+    }
+
+    .revBxProd {
+        position: absolute;
+        height: 110px;
+        width: 110px;
+        left: -10px;
+        bottom: -80px;
+    }
+
+    .faqMainRow {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+    }
+
+    .faqCnt p {
+        font-size: 15px;
+        line-height: 20px;
+        max-width: 460px;
+        margin-top: 15px;
+    }
+
+    .faqProd {
+        height: 110px;
+        width: 110px;
+        transform: translateX(-50%) translateY(-60px);
+    }
+
+    .faqAccrd {
+        gap: 15px;
+    }
+
+    .faqMain {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .accordion-item-header,
+    .accordion-item-body-content {
+        padding: 15px;
+    }
+
+    .accordion-item-header::after {
+        right: 15px;
+        font-size: 20px;
+    }
+
+    .accordion-item-header h5 {
+        font-size: 16px;
+        line-height: 18px;
     }
 
     /* HOME PAGE CSS END */
@@ -928,7 +1306,7 @@
         margin-bottom: 40px;
     }
 
-    .imgWithCntCnt {
+    .imgWithCnt.full-width .imgWithCntCnt {
         padding-top: 15px;
         padding-bottom: 40px;
         padding-left: 15px;
@@ -1069,6 +1447,236 @@
     .toolTipProd::after {
         height: 310px;
         width: 194px;
+    }
+
+    .toolTipProd {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .imgWithCntImg {
+        min-height: auto;
+        height: initial;
+    }
+
+    .imgWithCnt {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .imgWithCntCnt :is(ol, ul) {
+        margin-top: 15px;
+    }
+
+    .prodDetail {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .prodDetCnt {
+        gap: 13px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .prodDetBx h3 {
+        font-size: 16px;
+    }
+
+    .prodDetBx p {
+        font-size: 14px;
+        margin-top: 5px;
+        line-height: 17px;
+    }
+
+    .prodDetRow {
+        gap: 10px;
+    }
+
+    .prodDetIMG {
+        height: 300px;
+    }
+
+    .prodDetIMG img {
+        width: 150px;
+    }
+
+    .prodDetIMG::before {
+        height: 100%;
+        width: 100%;
+    }
+
+    .prodDetBx {
+        max-width: 265px;
+    }
+
+    .chooseSide {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .sideBoxTop {
+        gap: 12px;
+    }
+
+    .sideBox {
+        padding: 15px;
+    }
+
+    .ChossSideTpLeft {
+        width: 65px;
+        height: 100px;
+    }
+
+    .ChossSideTpRight h4 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .ChossSideTpRight h3 {
+        font-size: 24px;
+        line-height: 24px;
+        margin-top: 5px;
+    }
+
+    .sideBox::before {
+        width: 80px;
+        height: 100px;
+        top: 0px;
+        right: 0px;
+    }
+
+    .sideBox::after {
+        width: 100px;
+        height: 90px;
+        bottom: -50px;
+    }
+
+    .sideBoxBotm {
+        margin-top: 20px;
+    }
+
+    .sideBoxBotm ul {
+        gap: 10px;
+    }
+
+    .sideBoxBotm :is(p, li) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .sideBoxBotm p {
+        margin-top: 15px;
+    }
+
+    .videoReview {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .videRevHldr {
+        height: 300px;
+    }
+
+    .videoSliderReviews .swiper-wrapper {
+        min-height: 340px;
+    }
+
+    .videoSliderReviews .swiper-wrapper .swiper-slide-active .videRevHldr {
+        height: 340px;
+    }
+
+    .videoPlayBtnHldr .playBtn {
+        height: 40px;
+        width: 40px;
+    }
+
+    .videoRevBtmHldrPrnt {
+        padding: 7px;
+    }
+
+    .videoRevBtmHldr {
+        gap: 10px;
+        padding: 7px;
+        border-radius: 6px;
+    }
+
+    .vidRevBtmImg {
+        min-width: 60px;
+        width: 60px;
+        height: 52px;
+    }
+
+    .videRevCnt h3 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .videRevCnt span {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .videoSliderReviews .swiper-pagination-bullets {
+        padding-top: 30px;
+    }
+
+    .videoSliderReviews .swiper-pagination-bullet {
+        height: 8px;
+        width: 8px;
+    }
+
+    .videoSliderReviews .swiper-pagination-bullet-active {
+        height: 10px;
+        width: 10px;
+    }
+
+    .revBxProd {
+        height: 80px;
+        width: 80px;
+        left: -15px;
+        bottom: -60px;
+    }
+
+    .faqCnt p {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .faqProd {
+        height: 80px;
+        width: 80px;
+        transform: translateX(-50%) translateY(-50px);
+    }
+
+    .faqMainRow {
+        gap: 40px;
+    }
+
+    .accordion-item-header h5 {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .faqAccrd {
+        gap: 12px;
+    }
+
+    .faqMain {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .prodDetIMG::after {
+        height: 85%;
+        width: 85%;
     }
 
     /* HOME PAGE CSS END */

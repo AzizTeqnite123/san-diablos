@@ -1,0 +1,383 @@
+@media (max-width : 768px) {
+    /* GLOBAL */
+
+    .mainBtn {
+        margin-top: 30px;
+    }
+
+    .ribbon {
+        font-size: 15px;
+        padding: 11px 40px;
+    }
+
+    .mainBanner .container {
+        padding-right: 20px;
+    }
+
+    .headingH2 {
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: -2.2px;
+    }
+
+    .headingHldr {
+        margin-bottom: 30px;
+    }
+
+    body :is(.swiper-button-next, .swiper-button-prev) {
+        height: 35px;
+        width: 35px;
+    }
+
+    body :is(.swiper-button-next, .swiper-button-prev)::after {
+        font-size: 17px;
+    }
+
+    .headingH1 {
+        font-size: 33px;
+        line-height: 37px;
+    }
+
+    /* GLOBAL */
+
+    /* HOME PAGE CSS START */
+
+    .mainBanRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bannerContent .headingH1 {
+        text-align: center;
+    }
+
+    .logoSliderHldr {
+        gap: 20px;
+    }
+
+    .bannerContent .desc p {
+        font-size: 16px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .bannerContent .mainBtn :is(a, button) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bannerImg {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bannerContent {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    .companyLogoSlider {
+        padding: 20px 0 15px;
+    }
+
+    .companyLogoSlider::before {
+        width: 70px;
+    }
+
+    .companyLogoSlider::after {
+        width: 70px;
+    }
+
+    .companySliderLogoRow::after {
+        width: 50px;
+    }
+
+    .companySliderLogoRow::before {
+        width: 50px;
+    }
+
+    .bestSellerMain {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .categoryMainRow {
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .categoryMainRow .collection-card-wrapper:nth-last-child(odd):last-child {
+        max-width: 357px;
+        width: 100%;
+        grid-column: span 2;
+        margin-left: auto;
+        margin-right: auto;
+        justify-self: center;
+    }
+
+    .collection-card-wrapper .card .card__inner {
+        height: 350px;
+    }
+
+    .collection-card-wrapper .card .card__content .card__heading {
+        font-size: 20px;
+    }
+
+    .categoryMain {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .imgWithCntRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .imgWithCntImg {
+        order: 1;
+    }
+
+    .imgWithCnt.inverted .imgWithCntImg {
+        order: 1;
+    }
+
+    .imgWithCnt.full-width .imgWithCntImg {
+        min-height: auto;
+        height: 400px;
+    }
+
+    .imgWithCnt.inverted .imgWithCntCnt {
+        margin-left: 0px;
+    }
+
+    .imgWithCnt.full-width .imgWithCntCnt {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .imgWithCntCnt {
+        order: 2;
+    }
+
+    .imgWithCntCnt :is(ol, ul) {
+        margin-top: 20px;
+    }
+
+    .imgWithCnt {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    .prodDetail {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .imgWithCntImg {
+        min-height: auto;
+        height: 400px;
+    }
+
+    .imgWithCnt.full-width .imgWithCntCnt {
+        order: 2;
+    }
+
+    .mainBtn :is(a, button) {
+        font-size: 15px;
+        padding: 9px 23px 9px;
+    }
+
+    .product-card-wrapper .card .card__content .card__heading {
+        font-size: 15px;
+    }
+
+    .product-card-wrapper .card .card__content .price .price__container .price-item {
+        font-size: 18px;
+    }
+
+    .imgWithCnt::after {
+        height: 130px;
+        width: 60px;
+    }
+
+    .imgProdSmll {
+        height: 150px;
+        width: 150px;
+    }
+
+    .RevBxHldr {
+        padding: 40px 20px;
+    }
+
+    .imgWithCntCnt :is(p, ol li, ul li) {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .revBxTop span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .revBxTop img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+    .revBxMn {
+        gap: 20px;
+    }
+
+    .revBxBtmRgt h3 {
+        font-size: 18px;
+    }
+
+    .reviewBox {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .imgWithCntCnt h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .celebContent .ribbon {
+        font-size: 15px;
+    }
+
+    .celebreatedDetailed {
+        padding-top: 60px;
+    }
+
+    .celebreateRow {
+        gap: 15px;
+        row-gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .celebImg {
+        height: 320px;
+    }
+
+    .celebreateRow .celebBox:nth-last-child(odd):last-child {
+        max-width: 357px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+    .celebreatedDetailed::after {
+        width: 170px;
+        top: 350px;
+    }
+
+    .siteLinks ul li a {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .footTopRow .siteLinks:nth-of-type(3n + 2) {
+        padding-left: 30px;
+        padding-right: 15px;
+    }
+
+    .footTopRow .siteLinks:nth-of-type(3n + 1) {
+        padding-left: 0px;
+    }
+
+    .footTopRow .siteLinks:nth-of-type(3n + 3) {
+        padding-left: 30px;
+        padding-right: 15px;
+    }
+
+    .siteLinks h3 {
+        font-size: 16px;
+    }
+
+    .revBxBtmRgt p {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .bestSellerMain .container .mainBtn {
+        margin-top: 0px;
+    }
+
+    .toolTipProdRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .toolTipProdImg {
+        max-width: 500px;
+    }
+
+    .toolTipBox.First {
+        top: -5px;
+        margin-left: 20px;
+    }
+
+    .toolTipBox.First .toolTipLines {
+        left: unset;
+        right: -126px;
+        transform: rotate(45deg) scaleX(-1);
+        top: 20px;
+    }
+
+    .toolTipLines svg,
+    .toolTipBox.Fourth .toolTipLines svg,
+    .toolTipBox.Second .toolTipLines svg {
+        width: 170px;
+        height: 90px;
+    }
+
+    .toolTipBox.Second {
+        top: 50px;
+        right: 0px;
+    }
+
+    .toolTipBox.Second .toolTipLines {
+        position: absolute;
+        left: -140px;
+        top: 0px;
+        transform: rotate(-30deg);
+    }
+
+    .toolTipBox.Three {
+        top: 210px;
+        right: 0px;
+        margin-left: 0px;
+    }
+
+    .toolTipBox.Three .toolTipLines {
+        left: -135px;
+        top: -65px;
+        transform: rotate(35deg);
+    }
+
+    .toolTipBox.Fourth {
+        top: 355px;
+        margin-left: 0;
+        right: 0px;
+    }
+
+    .toolTipBox.Fourth .toolTipLines {
+        left: -158px;
+        top: -63px;
+        transform: rotate(30deg);
+    }
+
+    .prodDetRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* HOME PAGE CSS END */
+
+}
