@@ -1501,7 +1501,7 @@
     }
 
     .prodDetIMG img {
-        width: 150px;
+        width: 120px;
     }
 
     .prodDetIMG::before {
@@ -1675,8 +1675,8 @@
     }
 
     .prodDetIMG::after {
-        height: 85%;
-        width: 85%;
+        height: 80%;
+        width: 80%;
     }
 
     .bannerContent .desc p {
