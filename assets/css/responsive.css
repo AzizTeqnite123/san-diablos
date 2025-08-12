@@ -1679,6 +1679,10 @@
         width: 85%;
     }
 
+    .bannerContent .desc p {
+        margin-top: 7px;
+    }
+
     /* HOME PAGE CSS END */
 
 }
