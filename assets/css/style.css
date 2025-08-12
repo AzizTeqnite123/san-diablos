@@ -722,6 +722,9 @@ body :is(.swiper-button-prev) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    max-width: 1166px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .collection-card-wrapper {
@@ -735,7 +738,7 @@ body :is(.swiper-button-prev) {
 }
 
 .collection-card-wrapper .card .card__inner {
-    height: 592px;
+    height: 523px;
     width: 100%;
 }
 
@@ -926,7 +929,7 @@ body :is(.swiper-button-prev) {
 }
 
 .imgWithCnt.full-width .imgWithCntCnt {
-    max-width: 630px;
+    max-width: 640px;
     margin-left: 0;
     margin-right: auto;
     padding-right: 20px;
