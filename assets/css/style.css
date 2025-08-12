@@ -692,6 +692,7 @@ body :is(.swiper-button-prev) {
     width: auto;
     background: transparent;
     color: #141414;
+    border-color: #141414;
 }
 
 .product-card-wrapper .card .card__content .mainBtn :is(a, button):hover {
